@@ -8,7 +8,7 @@
 
 #include "Bitmap.hpp"
 
-Bitmap Bitmap::applyMask(const Bitmap & mask) {
+Bitmap Bitmap::applyMask(const Bitmap & mask) const {
     
     Bitmap bmp;
     bmp.infoHeader = infoHeader;
@@ -43,7 +43,7 @@ Bitmap Bitmap::applyMask(const Bitmap & mask) {
     
 }
 
-Bitmap Bitmap::flipHorizontally() {
+Bitmap Bitmap::flipHorizontally() const {
     
     Bitmap bmp;
     bmp.infoHeader = infoHeader;
@@ -65,7 +65,7 @@ Bitmap Bitmap::flipHorizontally() {
     
 }
 
-Bitmap Bitmap::flipVertically() {
+Bitmap Bitmap::flipVertically() const {
 
     Bitmap bmp;
     bmp.infoHeader = infoHeader;
@@ -81,7 +81,7 @@ Bitmap Bitmap::flipVertically() {
     
 }
 
-Bitmap Bitmap::flipLeft() {
+Bitmap Bitmap::flipLeft() const {
     
     Bitmap bmp;
     bmp.infoHeader = infoHeader;
@@ -106,7 +106,7 @@ Bitmap Bitmap::flipLeft() {
     
 }
 
-Bitmap Bitmap::flipRight() {
+Bitmap Bitmap::flipRight() const {
     
     Bitmap bmp;
     bmp.infoHeader = infoHeader;
@@ -131,7 +131,7 @@ Bitmap Bitmap::flipRight() {
     
 }
 
-Bitmap Bitmap::crop(uint32_t x, uint32_t y, uint32_t width, uint32_t height) {
+Bitmap Bitmap::crop(uint32_t x, uint32_t y, uint32_t width, uint32_t height) const {
     
     Bitmap bmp;
     bmp.infoHeader = infoHeader;

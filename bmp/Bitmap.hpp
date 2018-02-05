@@ -28,14 +28,14 @@ struct Bitmap {
     
     std::vector<std::vector<Pixel>> pixels;
     
-    Bitmap applyMask(const Bitmap & mask);
+    Bitmap applyMask(const Bitmap & mask) const;
     
-    Bitmap flipHorizontally();
-    Bitmap flipVertically();
-    Bitmap flipLeft();
-    Bitmap flipRight();
+    Bitmap flipHorizontally() const;
+    Bitmap flipVertically() const;
+    Bitmap flipLeft() const;
+    Bitmap flipRight() const;
     
-    Bitmap crop(uint32_t x, uint32_t y, uint32_t width, uint32_t height);
+    Bitmap crop(uint32_t x, uint32_t y, uint32_t width, uint32_t height) const;
     
 };
 
